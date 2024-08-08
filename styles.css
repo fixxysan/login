@@ -1,0 +1,98 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Fullscreen container with a background image */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: url('https://wallpapers.com/images/hd/mount-lorette-ponds-aesthetic-landscape-i2xczwir7r011uht.jpg') no-repeat center center fixed;
+    background-size: cover;
+}
+
+/* Center the login form */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+/* Styling the login form */
+.login-form {
+    background: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+    width: 100%;
+    max-width: 360px;
+}
+
+/* Form heading */
+.login-form h1 {
+    margin-bottom: 1.5rem;
+    font-size: 24px;
+    color: #00d4ff;
+    text-align: center;
+}
+
+/* Input group styling */
+.input-group {
+    margin-bottom: 1rem;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: #e0e0e0;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #333;
+    border-radius: 5px;
+    background: #2c2c2c;
+    color: #e0e0e0;
+    font-size: 16px;
+}
+
+/* Button styling */
+button {
+    width: 100%;
+    padding: 0.75rem;
+    background: #00d4ff;
+    border: none;
+    border-radius: 5px;
+    color: #1f1f1f;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+    background: #0099cc;
+    transform: translateY(-2px);
+}
+
+/* Signup link styling */
+.signup-link {
+    margin-top: 1rem;
+    font-size: 14px;
+    text-align: center;
+}
+
+.signup-link a {
+    color: #00d4ff;
+    text-decoration: none;
+}
+
+.signup-link a:hover {
+    text-decoration: underline;
+}
