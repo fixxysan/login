@@ -1,98 +1,88 @@
-/* Reset some default styles */
+/* Reset margin dan padding untuk semua elemen */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-/* Fullscreen container with a background image */
+/* Styling untuk body */
 body {
+    font-family: 'Roboto', sans-serif;
     display: flex;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
     height: 100vh;
-    background: url('https://wallpapers.com/images/hd/mount-lorette-ponds-aesthetic-landscape-i2xczwir7r011uht.jpg') no-repeat center center fixed;
+    background: url('assets/mount-lorette-ponds-aesthetic-landscape.jpg') no-repeat center center fixed;
     background-size: cover;
 }
 
-/* Center the login form */
-.container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-}
-
-/* Styling the login form */
-.login-form {
-    background: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
-    padding: 2rem;
-    border-radius: 10px;
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
-    width: 100%;
-    max-width: 360px;
-}
-
-/* Form heading */
-.login-form h1 {
-    margin-bottom: 1.5rem;
-    font-size: 24px;
-    color: #00d4ff;
+/* Styling untuk container login */
+.login-container {
+    background: rgba(255, 255, 255, 0.8); /* Latar belakang putih dengan transparansi */
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    width: 360px;
     text-align: center;
+    backdrop-filter: blur(10px); /* Efek blur pada latar belakang di bawah container */
+    position: relative; /* Untuk memastikan posisi backdrop-filter bekerja */
 }
 
-/* Input group styling */
-.input-group {
-    margin-bottom: 1rem;
+/* Styling untuk header */
+.login-container h1 {
+    margin-bottom: 20px;
+    color: #007bff;
+    font-size: 2em;
+    font-weight: 700;
+    transition: color 0.3s;
 }
 
-.input-group label {
-    display: block;
-    margin-bottom: 0.5rem;
-    color: #e0e0e0;
+.login-container h1:hover {
+    color: #0056b3;
 }
 
-.input-group input {
-    width: 100%;
-    padding: 0.75rem;
-    border: 1px solid #333;
-    border-radius: 5px;
-    background: #2c2c2c;
-    color: #e0e0e0;
-    font-size: 16px;
+/* Styling untuk form dan input */
+form {
+    display: flex;
+    flex-direction: column;
 }
 
-/* Button styling */
+label {
+    margin-bottom: 8px;
+    font-weight: 500;
+    color: #555;
+}
+
+input[type="text"],
+input[type="password"] {
+    margin-bottom: 20px;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 1em;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 8px rgba(0, 123, 255, 0.5);
+    outline: none;
+}
+
+/* Styling untuk tombol */
 button {
-    width: 100%;
-    padding: 0.75rem;
-    background: #00d4ff;
+    padding: 12px;
+    background-color: #007bff;
+    color: white;
     border: none;
-    border-radius: 5px;
-    color: #1f1f1f;
-    font-size: 16px;
+    border-radius: 8px;
     cursor: pointer;
-    transition: background 0.3s ease, transform 0.2s ease;
+    font-size: 1em;
+    transition: background-color 0.3s, transform 0.2s;
 }
 
 button:hover {
-    background: #0099cc;
-    transform: translateY(-2px);
-}
-
-/* Signup link styling */
-.signup-link {
-    margin-top: 1rem;
-    font-size: 14px;
-    text-align: center;
-}
-
-.signup-link a {
-    color: #00d4ff;
-    text-decoration: none;
-}
-
-.signup-link a:hover {
-    text-decoration: underline;
+    background-color: #0056b3;
+    transform: scale(1.05);
 }
